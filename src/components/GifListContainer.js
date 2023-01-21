@@ -1,5 +1,6 @@
 import React,{useEffect, useState} from "react";
 import GifList from "./GifList";
+import GifSearch from "./GifSearch";
 
 
 function GifListContainer(){
@@ -19,10 +20,15 @@ function GifListContainer(){
         })
     },[])
 
+    const handleSubmit = function() {
+
+    }
+
     return(
 
         <div>
-         <GifList />
+         <GifList gifs={gifs}/>
+         <GifSearch handleSubmit={handleSubmit}/>
         </div>
     )
 }

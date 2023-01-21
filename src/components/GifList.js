@@ -1,12 +1,17 @@
 import React from "react";
 
-function GifList(){
+function GifList({gifs}){
+
+  const gifsList = gifs.map((gif,index) => 
+    
+    <li key={index}><img src="gif" alt={`GIFDISPLAY`}/></li>
+  )
 
     return(
-        <div>
+        <ul>
+       {gifsList}
 
-
-        </div>
+        </ul>
 
     )
 }
