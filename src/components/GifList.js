@@ -3,10 +3,10 @@ import React from "react";
 function GifList({gifs}){
 
   const gifsList = gifs.map((gif,index) => 
-    
-    <li key={index}><img src="gif" alt={`GIFDISPLAY`}/></li>
-  )
 
+    <li key={index}><img src={gif} alt={`GIFDISPLAY${index}`}/></li>
+  )
+  
     return(
         <ul>
        {gifsList}

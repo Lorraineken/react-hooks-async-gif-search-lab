@@ -20,8 +20,8 @@ function GifListContainer(){
         })
     },[])
 
-    const handleSubmit = function() {
-
+    const handleSubmit = function(searchItem) {
+      console.log()
     }
 
     return(
