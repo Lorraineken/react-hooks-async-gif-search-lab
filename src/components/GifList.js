@@ -4,7 +4,7 @@ function GifList({gifs}){
 
   const gifsList = gifs.map((gif,index) => 
 
-    <li key={index}><img src={gif} alt={`GIFDISPLAY${index}`}/></li>
+    <li key={index}><img src={gif} alt={gif}/></li>
   )
   
     return(
